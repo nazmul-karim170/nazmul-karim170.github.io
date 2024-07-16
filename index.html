@@ -147,41 +147,7 @@
             </td>
             <td style="padding-bottom:35px;width:75%;vertical-align:middle">
               <a href="https://arxiv.org/pdf/2312.13663" id="MCG_journal">
-                <papertitle>Fisher Information guided Purification against Backdoor Attacks</papertitle>
-              </a>
-              <br>
-              <strong>Nazmul Karim*</strong>, <a href="https://www.linkedin.com/in/abdullah-al-arafat-12a951bb/">Abdullah Al Arafat*</a>,  <a href="https://www.adnansirajrakin.com/">Adnan Siraj Rakin</a>, <a href="https://www.ece.ucf.edu/person/nazanin-rahnavard/">Nazanin Rahnavard</a>
-              <br>
-              <em>ECCV</em>, 2024
-              <br>
-	      <a href="https://github.com/nazmul-karim170/FIP-Fisher-Backdoor-Removal">code</a>
-              <p>
-		      Our analysis shows that such manipulation can make the backdoor model
-converge to a bad local minima, i.e., sharper minima as compared
-to a benign model. Intuitively, the backdoor can be purified by
-re-optimizing the model to smoother minima. However, a naïve
-adoption of any optimization targeting smoother minima can lead
-to sub-optimal purification techniques hampering the clean test
-accuracy. Hence, to effectively obtain such re-optimization, inspired
-by our novel perspective establishing the connection between backdoor removal and loss smoothness, we propose Fisher Information
-guided Purification (FIP), a novel backdoor purification framework.
-Proposed FIP consists of a couple of novel regularizers that aid
-the model in suppressing the backdoor effects and retaining the
-acquired knowledge of clean data distribution throughout the backdoor removal procedure through exploiting the knowledge of Fisher
-Information Matrix (FIM). In addition, we introduce an efficient variant of FIP, dubbed as Fast FIP, which reduces the number of tunable
-parameters significantly and obtains an impressive runtime gain of almost 5×. 
-	</p>
-            </td>
-          </tr>	
-
-		
-          <tr>
-            <td style="padding:10px;width:25%;vertical-align:top">
-              <img src="images/Fisher_ccs2024.png" alt="fisher-ccs2024" width="160" style="border-style: none">
-            </td>
-            <td style="padding-bottom:35px;width:75%;vertical-align:middle">
-              <a href="https://arxiv.org/pdf/2312.13663" id="MCG_journal">
-                <papertitle>Fisher Information guided Purification against Backdoor Attacks</papertitle>
+                <papertitle>Augmented Neural Fine-Tuning for Efficient Backdoor Purification</papertitle>
               </a>
               <br>
               <strong>Nazmul Karim*</strong>, <a href="https://www.linkedin.com/in/abdullah-al-arafat-12a951bb/">Abdullah Al Arafat*</a>,  <a href="https://www.adnansirajrakin.com/">Adnan Siraj Rakin</a>, <a href="https://www.ece.ucf.edu/person/nazanin-rahnavard/">Nazanin Rahnavard</a>
@@ -209,6 +175,32 @@ parameters significantly and obtains an impressive runtime gain of almost 5×.
           </tr>	 -->
 
 		
+          <tr>
+            <td style="padding:10px;width:25%;vertical-align:top">
+              <img src="images/NFT_ECCV.png" alt="fisher-ccs2024" width="160" style="border-style: none">
+            </td>
+            <td style="padding-bottom:35px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/pdf/2407.10052" id="MCG_journal">
+                <papertitle>Augmented Neural Fine-Tuning for Efficient Backdoor Purification</papertitle>
+              </a>
+              <br>
+              <strong>Nazmul Karim*</strong>, <a href="https://www.linkedin.com/in/abdullah-al-arafat-12a951bb/">Abdullah Al Arafat*</a>,   <a href="https://www.linkedin.com/in/umarkhalidai/">Umar Khalid</a>, <a href="https://www.ece.ucf.edu/person/nazanin-rahnavard/">Nazanin Rahnavard</a>
+              <br>
+              <em>ECCV</em>, 2024
+              <br>
+	      <a href="https://github.com/nazmul-karim170/NFT-Augmented-Backdoor-Purification">code</a>
+              <p>
+		In this paper, we introduce Neural Mask Fine-Tuning (NFT), a method designed to optimally reorganize neuron activities to eliminate backdoor effects. 
+		NFT leverages simple data augmentation techniques such as MixUp, simplifying the trigger synthesis process and removing the need for adversarial search modules.
+		Our findings indicate that direct weight fine-tuning with limited validation data leads to overfitting and poor post-purification clean test accuracy.
+		To address this, NFT fine-tunes neural masks rather than model weights and incorporates a mask regularizer to minimize model drift during purification. 
+		NFT demonstrates high efficiency in both runtime and sample usage, capable of removing backdoors with just a single sample per class. 
+		We validate NFT’s effectiveness through extensive experiments across various tasks, including image classification, object detection, video action recognition, 3D point cloud processing, and natural language processing.
+	</p>
+            </td>
+          </tr>	
+
+		
 	<tr>
             <td style="padding:10px;width:25%;vertical-align:top">
               <img src="images/csfda_cvpr2023.png" alt="csfda-cvpr2023" width="160" style="border-style: none">
@@ -227,7 +219,8 @@ parameters significantly and obtains an impressive runtime gain of almost 5×.
               <a href="data/csfda_cvpr2023.bib">bibtex</a> /
               <a href="https://www.youtube.com/watch?v=tA-8U4rD32I">video</a>
               <p>
-		   A curriculum learning-aided self-training framework for SFDA that adapts efficiently and reliably to changes across domains based on selective pseudo-labeling. Specifically, we employ a curriculum learning scheme to promote learning from a restricted amount of pseudo labels selected based on their reliabilities. This simple yet effective step successfully prevents label noise propagation during different stages of adaptation and eliminates the need for costly memory-bank based label refinement.
+		   A curriculum learning-aided self-training framework for SFDA that adapts efficiently and reliably to changes across domains based on selective pseudo-labeling. Specifically, we employ a curriculum learning scheme to promote learning from a restricted amount of pseudo labels selected based on their reliabilities.
+		This simple yet effective step successfully prevents label noise propagation during different stages of adaptation and eliminates the need for costly memory-bank based label refinement.
 		</p>
             </td>
           </tr>
